@@ -10,3 +10,14 @@
 
 Категория: Животные
 Количество элементов: 4*/
+const items = [...document.querySelectorAll('li.item')];
+items.map(item => {
+    const title = item.querySelector('h2');
+    const list = item.querySelectorAll('ul li');
+    return {
+        title: title.textContent,
+        count: list.length
+    }
+}).forEach(entry => {
+    console.log('Категория:', entry.title,'\nКоличество элементов:', entry.count);
+})
