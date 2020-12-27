@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/*.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}*/
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.gallery {
+  /*display: flex;*/
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  list-style: none;
+}
+/*.card {
+  width: calc((100% - 2 * 10px) / 3);
+  height: auto;
+  margin-right: 10px;
+}

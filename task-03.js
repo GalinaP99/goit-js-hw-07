@@ -27,9 +27,10 @@ const images = [
 ];
 
 const createImagesList = images => {
-   const titleRef = document.createElement('li');
+    const titleRef = document.createElement('li');
+    titleRef.classList.add('card');
     const imagesRef = document.createElement('img');
-    imagesRef.setAttribute('url', images.url);
+    imagesRef.setAttribute('src', images.url);
     imagesRef.setAttribute('alt', images.alt);
     titleRef.appendChild(imagesRef);
     return titleRef;
