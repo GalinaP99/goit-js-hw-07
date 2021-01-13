@@ -13,8 +13,10 @@
 */
 const validInputRef = document.querySelector('#validation-input');
 validInputRef.addEventListener('blur', handleInputBlur);
+const dataLength = Number(validInputRef.dataset.length); 
+
 function handleInputBlur(event) {
-  if (event.target.value.length === 6) {
+  if (event.target.value.length === dataLength) {
     validInputRef.classList.remove('invalid');
        validInputRef.classList.add('valid'); 
   } else {
@@ -23,4 +25,4 @@ function handleInputBlur(event) {
         } 
 }
 
-//console.dir(validInputRef);
+//console.dir(validInputRef.dataset.length);

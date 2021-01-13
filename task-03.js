@@ -26,7 +26,16 @@ const images = [
   },
 ];
 
-const createImagesList = images => {
+const galleryRef = document.querySelector('#gallery');
+
+const createImagesList = images.map(image => {
+  galleryRef.insertAdjacentHTML('afterbegin', `<li> <img src = ${image.url}
+    alt = "${image.alt}"> </li>`);
+
+  return galleryRef;
+})
+//console.log(listRef);
+/*const createImagesList = images => {
     const titleRef = document.createElement('li');
     titleRef.classList.add('card');
     const imagesRef = document.createElement('img');
@@ -41,4 +50,4 @@ console.log(createImagesList(image));
 const imagesList = images.map(image =>
     createImagesList(image));
 const imagesListRef = document.querySelector('#gallery');
-imagesListRef.append(...imagesList);
+imagesListRef.append(...imagesList);*/

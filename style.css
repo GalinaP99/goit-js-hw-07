@@ -20,7 +20,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.gallery {
+#gallery {
   /*display: flex;*/
   display: grid;
   grid-template-rows: 1fr;
@@ -33,16 +33,21 @@ img {
   height: auto;
   margin-right: 10px;*/
 
-.counter {
-  margin-left: 30px;
-  margin-top: 30px;
+#counter,
+#text,
+#controls {
+  margin: 30px;
 }
 
-.name {
+#name-input,
+h1,
+#font-size-control {
   margin-left: 30px;
 }
 
 #validation-input {
+  margin-left: 30px;
+  margin-bottom: 10px;
   border: 3px solid #bdbdbd;
 }
 
