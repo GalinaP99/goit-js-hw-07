@@ -51,11 +51,11 @@ const inc = document.querySelector('[data-action="increment"]');
 let counterValue = 0;
 const decrement = () => {
   counterValue -= 1;
-  document.getElementById('value').textContent = counterValue;
+  counter.textContent = counterValue;
 };
 const increment = () => {
   counterValue += 1;
-  document.getElementById('value').textContent = counterValue;
+  counter.textContent = counterValue;
 };
 dec.addEventListener('click', decrement);
 inc.addEventListener('click', increment);

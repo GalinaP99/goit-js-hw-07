@@ -23,7 +23,9 @@ const createIngredientsList = ingredients => {
 ingredients.forEach(ingredient => {
 console.log(createIngredientsList(ingredient));
 });
+
 const ingredientsList = ingredients.map(ingredient =>
-    createIngredientsList(ingredient));
-const ingredientsListRef = document.querySelector('#ingredients');
-ingredientsListRef.append(...ingredientsList);
+  createIngredientsList(ingredient));
+    
+const ingredientsListRef = document.querySelector('#ingredients')
+.append(...ingredientsList);
