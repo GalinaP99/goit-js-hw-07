@@ -10,13 +10,15 @@
 
 Категория: Животные
 Количество элементов: 4*/
-const items = [...document.querySelectorAll('li.item')];
-
+const items = document.querySelectorAll('li.item');
+console.log('В списке', items.length, 'категории.')
 items.forEach(item => {
     const title = item.querySelector('h2');
     const list = item.querySelectorAll('ul li'); 
     console.log('Категория:', title.textContent, '\nКоличество элементов:', list.length); 
-   // console.dir(list)
+    //console.dir(list)
+    //console.dir(title)
+    //console.dir(items)
 })
 
 /*items.map(item => {
